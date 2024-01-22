@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invite Your Lover</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #invitation {
+            text-align: center;
+        }
+
+        #lover-gif {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        #buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        #yes {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4caf50; /* Green Button Color */
+            color: #fff; /* White Text Color */
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        #no {
+            padding: 10px;
+            font-size: 16px;
+            cursor: not-allowed;
+            background-color: #f44336; /* Red Button Color */
+            color: #fff; /* White Text Color */
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        #no:hover {
+            background-color: #f44336; /* Red Button Color (no change on hover) */
+        }
+    </style>
+</head>
+<body>
+
+<div id="invitation">
+    <p>Hey love, want to go out with me?</p>
+    <img id="lover-gif" src="path/to/your/lover-gif.gif" alt="Lover GIF">
+    <div id="buttons">
+        <button id="yes" onclick="alert('Great! Can't wait!')">Yes</button>
+        <button id="no" disabled>No</button>
+    </div>
+</div>
+
+</body>
+</html>
